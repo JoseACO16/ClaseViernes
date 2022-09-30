@@ -15,7 +15,8 @@ import java.util.Scanner;
 public class Estructuras_V {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+//        System.out.println("Hello World!");
+// ejercicio en clase y similar al ejercicio 3 tarea
         System.out.println();
         int[] arr ={12, 34, 64, 2, 3, };
         //System.out.println("hola mundo");
@@ -26,10 +27,10 @@ public class Estructuras_V {
         System.out.println(recursion.encontrarmax(arr, 1, arr[0]));
         
         //ejercicio2
-        Ejercicio2 p = new Ejercicio2();
-        String palabra;
-        Scanner sc = new Scanner(System.in);
-        palabra = sc.next();
-        System.out.println("String recusivamente: " + p.Ejercicio2(palabra));
+//        Ejercicio2 p = new Ejercicio2();
+//        String palabra;
+//        Scanner sc = new Scanner(System.in);
+//        palabra = sc.next();
+//        System.out.println("String recusivamente: " + p.Ejercicio2(palabra));
     }
 }
