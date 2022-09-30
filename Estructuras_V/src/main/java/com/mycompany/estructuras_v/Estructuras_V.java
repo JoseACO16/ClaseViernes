@@ -5,6 +5,9 @@
 
 package com.mycompany.estructuras_v;
 
+import Tarea1.Ejercicio2;
+import java.util.Scanner;
+
 /**
  *
  * @author XPC
@@ -21,5 +24,12 @@ public class Estructuras_V {
         //System.out.println(recursion.encontrarmax(arr, 1, arr[0]));
         //fghftxhrfh
         System.out.println(recursion.encontrarmax(arr, 1, arr[0]));
+        
+        //ejercicio2
+        Ejercicio2 p = new Ejercicio2();
+        String palabra;
+        Scanner sc = new Scanner(System.in);
+        palabra = sc.next();
+        System.out.println("String recusivamente: " + p.Ejercicio2(palabra));
     }
 }
