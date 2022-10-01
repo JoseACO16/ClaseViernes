@@ -20,7 +20,7 @@ public class main {
         System.out.println(Pila.pop());
         System.out.println(Pila.pop());
         System.out.println(Pila.pop());
-        
+        // boolean
         System.out.println(Pila.encontrar(3));
     }
     
