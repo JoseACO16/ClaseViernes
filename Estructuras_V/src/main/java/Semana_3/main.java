@@ -11,6 +11,7 @@ package Semana_3;
 public class main {
     
     public static void main(String[] args) {
+        //nodo y stack
         Stack<Integer> Pila = new Stack<Integer>();
         Pila.push(1);
         Pila.push(2);

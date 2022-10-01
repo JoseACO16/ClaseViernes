@@ -39,4 +39,23 @@ public class Stack<T> {
         
         
     }
+    
+    public boolean encontrar(T x){
+        
+        boolean existe = false;
+        
+        node<T> aux = top;
+        
+        while( existe != true && aux != null){
+         
+            if (x == aux.getValue()) {
+                existe = true;
+            }else{
+                aux = aux.getNext();
+            }
+            
+        }
+        return existe;
+    }
+
 }

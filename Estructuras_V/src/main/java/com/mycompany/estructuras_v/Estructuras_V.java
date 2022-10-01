@@ -35,14 +35,14 @@ public class Estructuras_V {
 //        System.out.println("String recusivamente: " + p.Ejercicio2(palabra));
 
 //main semana3
-        Stack<Integer> Pila = new Stack<Integer>();
-        Pila.push(1);
-        Pila.push(2);
-        Pila.push(3);
-        System.out.println(Pila.pop());
-        System.out.println(Pila.pop());
-        System.out.println(Pila.pop());
-        System.out.println(Pila.pop());
+//        Stack<Integer> Pila = new Stack<Integer>();
+//        Pila.push(1);
+//        Pila.push(2);
+//        Pila.push(3);
+//        System.out.println(Pila.pop());
+//        System.out.println(Pila.pop());
+//        System.out.println(Pila.pop());
+//        System.out.println(Pila.pop());
 
     }
 }
