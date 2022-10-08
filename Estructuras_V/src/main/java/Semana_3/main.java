@@ -25,7 +25,7 @@ public class main {
         
         
         ////////////COLA///////////////
-        
+        //
         Queue <Integer> prueba = new Queue <Integer> ();
         for(int i =0; i<101; i++){
             prueba.enqueue(i);
