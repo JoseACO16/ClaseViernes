@@ -8,10 +8,19 @@ package Tarea2;
  *
  * @author XPC
  */
-public class filaEstadio {
+
+
+public class filaEstadio <T>{
+    
+    private Nodo<T> tail;
+    private Nodo<T> head;
+    
+    //
     
     public void filaEstadio(Entrada entrada) {
-        Node<T> newNode = new Node<T>(entrada);
+   
+        
+        Nodo<T> newNode = new Nodo<T>(entrada);
         if (head == null) {
             head = newNode;
             tail = newNode;
@@ -22,7 +31,7 @@ public class filaEstadio {
                         newNode.setNext(head);
                         head = newNode;
                     } else {
-                        node<T> temp = head;
+                        Nodo<T> temp = head;
                         while (entrada.getHora() >= head.getNext().getEntrada().getHora()) {
                             temp = temp.getNext();
                         }
@@ -40,7 +49,7 @@ public class filaEstadio {
                         }
                     }
                 } else {
-                    node<T> temp = head;
+                    Nodo<T> temp = head;
                     while (temp.getNext().getEntrada().getSector() != "sombra" || temp.getNext().getEntrada().getSector() != null) {
                         if (temp.getNext() == null) {
                             temp.setNext(newNode);
