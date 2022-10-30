@@ -21,6 +21,7 @@ public class filaEstadio <T>{
    
         
         Nodo<T> newNode = new Nodo<T>(entrada);
+        
         if (head == null) {
             head = newNode;
             tail = newNode;

@@ -37,6 +37,8 @@ public class Nodo<T> {
     public void setEntrada(Entrada entrada) {
         this.entrada = entrada;
     }
+
+    
     
     
 }
