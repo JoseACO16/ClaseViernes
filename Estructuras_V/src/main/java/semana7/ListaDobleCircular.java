@@ -50,7 +50,7 @@ public class ListaDobleCircular {
            System.out.println(aux.getValue().toString());
            aux=aux.getNext();
        }
-       System.out.println(tail);
+       System.out.println(tail.getValue().toString());
    }
   
 }

@@ -20,8 +20,8 @@ public class main {
         ListaDobleCircular Lista2 = new ListaDobleCircular();
         Lista2.insertar(new Persona(1, "P"));
         Lista2.insertar(new Persona(2, "P"));
-        Lista2.insertar(new Persona(3, "P"));
         Lista2.insertar(new Persona(4, "P"));
+        Lista2.insertar(new Persona(3, "P"));
         Lista2.imprimirLista();
         
     }
