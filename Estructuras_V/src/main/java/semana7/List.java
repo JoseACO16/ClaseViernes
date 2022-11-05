@@ -47,4 +47,89 @@ public class List {
            aux=aux.getNext();
        }
    }
+   
+   
+   public boolean existe(int id){
+      boolean esta=false;
+      
+      //busca en lista, y retorna true si es una persona tiene el id
+      //en la lista
+      if(cabeza != null){   //si hay algo en la lista buscara
+          node aux= cabeza;  //utilizando aux como indice
+          
+          //mientras no se acabe la lista y el elemento
+          //de la lista sea menor que el buscador
+          while(aux != null && aux.getDato().getId() < id){
+              aux = aux.getNext(); // avanzo en la lista
+          }
+          //verdadero si lo encontro
+          esta = (aux !=null && aux.getDato().getId()==id);
+      }
+      return esta;
+  }
+  
+  public void modifica(Persona p){
+      //busca si existe alguien con el id, lo actualiza
+      if(cabeza != null){ //si hay algo en la lista buscare
+          node aux = cabeza; //utilizando aux como indice
+          //mientras no se acabe la lista y el elemento
+          //de la lista sea menor que el buscador
+          while(aux != null && aux.getDato().getId() < p.getId()){
+              aux = aux.getNext();// avanzando en la lista
+          }
+          //si lo encuentra hago el cambio
+          if(aux != null && aux.getDato().getId()==p.getId()){
+              //solo basta cambiar nombre
+              aux.getDato().setNombre(p.getNombre());
+          }
+          
+      }
+  }
+  
+  public void elimina(int id){
+      //si una persona tiene el id lo elimina
+      if(cabeza !=null){  //si hay algo en la lista buscara
+          if(cabeza.getDato().getId()==id){
+              cabeza = cabeza.getNext();
+          }else{
+              node aux = cabeza; //utilizando aux como indicew
+              //mientras no se acabe la lista y el elemento
+              //de la lista sea menor que el buscador
+              while(aux.getNext() != null && aux.getNext().getDato().getId()<id){
+                  aux = aux.getNext();//avanzo en la lista
+              }
+              //si es el adelamte....lo borro
+              if(aux.getNext()!= null && aux.getNext().getDato().getId()== id){
+                  aux.setNext(aux.getNext().getNext());
+              }
+          }
+          
+      }
+  }
+  
+  public Persona extrae(int id){
+      Persona p=null;
+      //si una persona tiene el id, lo extrae (eliminando y retornando
+      if(cabeza!= null){  //si hay algo en lista buscara
+          if(cabeza.getDato().getId()==id){
+              cabeza=cabeza.getNext();
+          }else{
+              node aux= cabeza;//utilizando aux como indice
+              
+              //mientras no se acabe la lista y el elemento
+              //de la lista sea menor que el buscador
+              
+              while(aux.getNext() !=null && aux.getNext().getDato().getId()<id){
+                  aux=aux.getNext();
+              }
+              //si  es el de adelante.... guardo persona y lo borro
+              if(aux.getNext()!=null&&aux.getNext().getDato().getId()==id){
+                  p= aux.getNext().getDato();
+                  aux.setNext(aux.getNext().getNext());//cambio las referencias
+              }
+          }
+      }
+      return p;
+  }
+   
 }

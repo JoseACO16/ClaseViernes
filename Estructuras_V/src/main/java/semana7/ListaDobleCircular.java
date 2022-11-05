@@ -52,5 +52,5 @@ public class ListaDobleCircular {
        }
        System.out.println(tail.getValue().toString());
    }
-  
+    
 }
