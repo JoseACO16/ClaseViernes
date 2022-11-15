@@ -4,33 +4,41 @@
  */
 package Tarea_Listas;
 
+import semana7.node;
+
 /**
  *
  * @author XPC
  */
-public class Nodo {
-     private int valor;
-    private Nodo siguiente;
+public class Nodo<T> {
+   
+    
+    private T valor;
+    private Nodo<T> siguiente;
 
-    public void Nodo() {
-        this.valor = 0;
-        this.siguiente = null;
+    public Nodo() {
     }
 
-    public int getValor() {
-        return valor;
-    }
-
-    public void setValor(int valor) {
+    public Nodo(T valor, Nodo<T> siguiente) {
         this.valor = valor;
-    }
-
-    public Nodo getSiguiente() {
-        return siguiente;
-    }
-
-    public void setSiguiente(Nodo siguiente) {
         this.siguiente = siguiente;
     }
 
+    public T getValor() {
+        return valor;
+    }
+
+    public void setValor(T valor) {
+        this.valor = valor;
+    }
+
+    public Nodo<T> getSiguiente() {
+        return siguiente;
+    }
+
+    public void setSiguiente(Nodo<T> siguiente) {
+        this.siguiente = siguiente;
+    }
+
+    
 }

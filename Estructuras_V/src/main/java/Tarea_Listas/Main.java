@@ -32,5 +32,13 @@ public class Main {
         System.out.println(lista.getValor(numero));
         System.out.println("\n Se obtiene el valor del nodo anterior a la posicion ingresada");
         System.out.println(lista.getValor(numero-1));
+        
+        
+        ListaCircular lc = new ListaCircular();
+        System.out.println("Eliminar nodo");
+        System.out.println("cual es el valor del nodo que quiere eliminar");
+        lc.eliminar(numero);
+        
+        
     }
 }

@@ -41,13 +41,13 @@ public class Lista {
 
         if (posicion >= 0 && posicion < tamano) {
             if (posicion == 0) {
-                return inicio.getValor();
+                return (int) inicio.getValor();
             } else {
                 Nodo aux = inicio;
                 for (int i = 0; i < posicion; i++) {
                     aux = aux.getSiguiente();
                 }
-                return aux.getValor();
+                return (int) aux.getValor();
             }
         } else {
             throw new Exception("Posicion inexistente en la lista.");
@@ -65,4 +65,8 @@ public class Lista {
             }
         }
     }
-}
+    
+    
+    }
+    
+
