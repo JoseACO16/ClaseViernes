@@ -5,6 +5,7 @@
 package Tarea_Listas;
 
 import java.util.Scanner;
+import semana8.Persona;
 
 /**
  *
@@ -39,6 +40,18 @@ public class Main {
         System.out.println("cual es el valor del nodo que quiere eliminar");
         lc.eliminar(numero);
         
+        semana8.ListaDobleCircular prueba = new semana8.ListaDobleCircular();
+        Persona a = new Persona(1,"Melanie");
+        Persona b = new Persona(2,"Jose");
+        Persona c = new Persona(3,"Jessica");
+        Persona d = new Persona(4,"Mauricio");
+        Persona e = new Persona(5,"Sofia");
         
+        prueba.insertar(a);
+        prueba.insertar(b);
+        prueba.insertar(c);
+        prueba.insertar(e);
+        
+        prueba.existe(2);
     }
 }
