@@ -74,13 +74,13 @@ public class List {
           node aux = cabeza; //utilizando aux como indice
           //mientras no se acabe la lista y el elemento
           //de la lista sea menor que el buscador
-          while(aux != null && aux.getDato().getId() < p.getId()){
+          while(aux != null && aux.getValue().getId() < p.getId()){
               aux = aux.getNext();// avanzando en la lista
           }
           //si lo encuentra hago el cambio
-          if(aux != null && aux.getDato().getId()==p.getId()){
+          if(aux != null && aux.getValue().getId()==p.getId()){
               //solo basta cambiar nombre
-              aux.getDato().setNombre(p.getNombre());
+              aux.getValue().setNombre(p.getNombre());
           }
           
       }
